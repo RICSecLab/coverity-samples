@@ -1,4 +1,5 @@
 MAIN_DIR = src
+INC_DIR = include
 SRCDIR = lib
 OBJDIR = obj
 SRCS := $(shell find $(SRCDIR) -name "*.c")
@@ -14,10 +15,10 @@ CPPFLAGS= -Wall -std=c++11
 all: mainc maincpp
 
 mainc: $(SRCS) $(MAIN_DIR)/main.c
-	$(CC) $(CFLAGS) $(SRCS) $(MAIN_DIR)/main.c -o mainc
+	$(CC) $(CFLAGS) -I $(INC_DIR)/ $(SRCS) $(MAIN_DIR)/main.c -o mainc
 
 maincpp: $(SRCSPP) $(MAIN_DIR)/main.cpp
-	$(CPP) $(CPPFLAGS) $(SRCSPP) $(MAIN_DIR)/main.cpp -o maincpp
+	$(CPP) $(CPPFLAGS) -I $(INC_DIR)/ $(SRCSPP) $(MAIN_DIR)/main.cpp -o maincpp
 
 clean:
 	rm ./mainc ./maincpp

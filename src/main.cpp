@@ -1,4 +1,4 @@
-#include "include/lib.hpp"
+#include "lib.hpp"
 
 int main(int argc, char *argv[]) {
   access_ob_dynamic_arr();

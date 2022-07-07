@@ -1,4 +1,4 @@
-#include "include/lib.h"
+#include "lib.h"
 
 int main(void) {
   access_arr_minus_index();
