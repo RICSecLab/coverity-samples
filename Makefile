@@ -20,6 +20,5 @@ maincpp: $(SRCSPP) $(MAIN_DIR)/main.cpp
 	$(CPP) $(CPPFLAGS) $(SRCSPP) $(MAIN_DIR)/main.cpp -o maincpp
 
 clean:
-	rm ./main ./mainc ./maincpp
-	rm -rf $(OBJDIR)/*
-	rm -rf $(SRCDIR)/*.o
+	rm ./mainc ./maincpp
+
