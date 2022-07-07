@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: msymt/coverity-scan-action@v1
+      - uses:  RICSecLab/coverity-scan-action@2022-07-07-fixes
         with:
           email: ${{ secrets.COVERITY_SCAN_EMAIL }}
           token: ${{ secrets.COVERITY_SCAN_TOKEN }}
