@@ -2,10 +2,10 @@
 #include <string.h>
 #include <stdlib.h>
 
-int main(int argc, char* argv[]) {
+void null_ptr_der() {
   int a;
   int *pi = NULL;
   a = *pi;
   printf("%d, %d\n", *pi, a);
-  return 0;
+  
 }

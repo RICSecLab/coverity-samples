@@ -3,8 +3,8 @@
 
 #define BUFFERSIZE 8
 
-int main(int argc, const char *argv[]) {
+void access_ob_fixed_local_arr() {
   char buf[BUFFERSIZE] = {"hoge"};
   printf("%s\n", buf[BUFFERSIZE + 1]);
-  return 0;
+  
 }

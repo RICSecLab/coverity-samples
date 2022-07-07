@@ -8,9 +8,9 @@ void exec_shell() {
   system("/bin/sh");
 }
 
-int main(int argc, char *argv[]) {
+void bof_rip() {
   char buf[BUFFERSIZE];
   gets(buf);
   printf("%s\n", buf);
-  return 0;
+  
 }

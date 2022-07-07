@@ -4,7 +4,7 @@
 
 #define BUFFERSIZE 64
 
-int main(int argc, const char *argv[]) {
+void double_free(char *input) {
   char *buff;
 
   buff = (char *)malloc(BUFFERSIZE);
@@ -12,7 +12,7 @@ int main(int argc, const char *argv[]) {
     perror("malloc");
     exit(1);
   }
-  strncpy(buff, argv[1], BUFFERSIZE-1);
+  strncpy(buff, input, BUFFERSIZE-1);
   free(buff);
   free(buff);
 }

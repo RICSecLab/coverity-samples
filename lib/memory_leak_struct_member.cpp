@@ -9,12 +9,11 @@ struct buf_t {
     buf_t *next;
 };
 
-int main() {
+void memory_leak_struct_member() {
   struct buf_t buf;
   buf.buf = new int[BUFFERSIZE];
   buf.next = NULL;
 
   printf("%p\n", buf.buf); // disable Dead Store
   // delete[] buf.buf; // if not, memory leak
-  return 0;
 }

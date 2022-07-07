@@ -3,8 +3,8 @@
 
 int i, j;
 
-int main(int argc, char *argv[]) {
+void use_uninit_global_val(){
   i = 0;
   printf("i, j = %d, %d\n", i, j);
-  return 0;
+  
 }

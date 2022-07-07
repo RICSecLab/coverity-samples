@@ -8,7 +8,7 @@ struct BUF {
   int size;
 };
 
-int main(int argc, char *argv[]) {
+void dynamic_arr_not_gurd() {
   struct BUF *buf;
   buf = (struct BUF *)malloc(sizeof(struct BUF));
   // null gurd off
@@ -20,6 +20,6 @@ int main(int argc, char *argv[]) {
   buf->age = 0;
   printf("name: %c, size: %d\n", buf->age, buf->size);
   free(buf);
-  return 0;
+  
 }
 

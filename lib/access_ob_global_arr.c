@@ -5,7 +5,7 @@
 
 char buf[BUFFERSIZE] = {"hoge"};
 
-int main(int argc, char *argv[]) {
+void access_ob_global_arr() {
   printf("%s\n", buf[BUFFERSIZE + 1]);
-  return 0;
+  
 }

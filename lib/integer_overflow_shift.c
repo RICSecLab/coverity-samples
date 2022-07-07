@@ -6,7 +6,7 @@
 //
 // shift operator
 //
-int main(int argc, const char *argv[]) {
+void integer_overflow_shift() {
   char char_shit = 1 << SHIFT_VAL;
   unsigned char uchar_shit = 1 << SHIFT_VAL;
 
@@ -37,5 +37,5 @@ int main(int argc, const char *argv[]) {
   printf("long long shift = %lld\n", llong_shit);
   printf("unsigned long long shift = %llu\n", ullong_shit);
 
-  return 0;
+  
 }

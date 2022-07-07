@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(int argc, const char *argv[]) {
+void init_size_stdin_malloc() {
   size_t size = 0; // 10
   scanf("%ld", &size);
   long *arr = malloc(size * sizeof(long));
@@ -12,5 +12,5 @@ int main(int argc, const char *argv[]) {
     printf("%ld\n", arr[i]);
   }
   free(arr);
-  return 0;
+  
 }

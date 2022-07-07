@@ -4,7 +4,7 @@
 
 #define ARRAY_SIZE 5
 
-int main(int argc, char *argv[]) {
+void bounds_check_loop() {
   int array[ARRAY_SIZE];
   int val = 1;
   int i;
@@ -16,5 +16,5 @@ int main(int argc, char *argv[]) {
   for(int j = 0; j < ARRAY_SIZE; j++) {
     printf("%d\n", array[j]);
   }
-  return 0;
+  
 }

@@ -8,7 +8,7 @@ struct BUF {
   int size;
 };
 
-int main(int argc, char *argv[]) {
+void uaf() {
   struct BUF *buf;
   // struct: buf
   buf = (struct BUF *)malloc(sizeof(struct BUF));
@@ -26,5 +26,5 @@ int main(int argc, char *argv[]) {
   buf->size = BUFFERSIZE + 2;
   printf("num: %d, size: %d\n", buf->num, buf->size);
 
-  return 0;
+  
 }

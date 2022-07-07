@@ -4,7 +4,7 @@
   //
   // limits values
   //
-int main(int argc, const char *argv[]) {
+void integer_overflow() {
 
   /* char */
   char char_min = CHAR_MIN - 1;
@@ -56,5 +56,5 @@ int main(int argc, const char *argv[]) {
   unsigned long long ullong_max = ULLONG_MAX + 1;
   printf("max of unsigned long long = %llu\n", ullong_max);
 
-  return 0;
+  
 }

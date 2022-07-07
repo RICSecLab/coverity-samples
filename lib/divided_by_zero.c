@@ -6,7 +6,7 @@ int calc_div(int x, int y) {
   return x / y;
 }
 
-int main(int argc, char *argv[]) {
+void divided_by_zero() {
   int a = 1, b = 0;
 
   // case 1: direct
@@ -17,5 +17,5 @@ int main(int argc, char *argv[]) {
   c = calc_div(a, b);
   printf("%d\n", c);
 
-  return 0;
+  
 }

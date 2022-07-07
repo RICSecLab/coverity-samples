@@ -4,8 +4,7 @@
 
 #define BUFFERSIZE 8
 
-int main(int argc, const char *argv[]) {
+void access_ob_dynamic_arr() {
   std::vector<int> vec(BUFFERSIZE, 0);
   std::cout << vec[BUFFERSIZE + 1] << std::endl;
-  return 0;
 }

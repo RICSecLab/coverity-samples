@@ -3,8 +3,7 @@
 
 #define BUFFERSIZE 16
 
-int main(int argc, const char *argv[]) {
+void access_arr_minus_index() {
   char buf[BUFFERSIZE] = {"hoge"};
   printf("%s\n", buf[-1]);
-  return 0;
 }

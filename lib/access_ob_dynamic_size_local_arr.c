@@ -3,7 +3,7 @@
 
 #define BUFFERSIZE 8
 
-int main(int argc, char *argv[]) {
+void access_ob_dynamic_size_local_arr() {
   int *buf = calloc(BUFFERSIZE, sizeof(int));
   if(!buf) {
     printf("calloc error\n");
@@ -11,5 +11,4 @@ int main(int argc, char *argv[]) {
   }
   printf("%d\n", buf[BUFFERSIZE + 1]);
   free(buf);
-  return 0;
 }

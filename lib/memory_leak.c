@@ -8,7 +8,7 @@ struct BUF {
   int size;
 };
 
-int main(int argc, char *argv[]) {
+void memory_leak() {
   struct BUF *buf;
   buf = (struct BUF *)malloc(sizeof(struct BUF));
   if (!buf) {
@@ -19,5 +19,5 @@ int main(int argc, char *argv[]) {
   buf->size = BUFFERSIZE;
   printf("num: %d, size: %d\n", buf->num, buf->size);
 
-  return 0;
+  
 }

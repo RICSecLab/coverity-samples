@@ -4,7 +4,7 @@
 
 #define ARRAY_SIZE 5
 
-int main(int argc, char *argv[]) {
+void bounds_check() {
   int array[ARRAY_SIZE];
   int val = 1;
   int i;
@@ -12,5 +12,4 @@ int main(int argc, char *argv[]) {
   if (i < 0 || i >= ARRAY_SIZE) exit(1); // 境界チェック
   array[i] = val;
   printf("%d\n", array[i]);
-  return 0;
 }
