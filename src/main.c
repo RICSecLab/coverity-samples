@@ -8,13 +8,16 @@ int main(void) {
   bof_rip();
   bof_str("hoge");
   bof_str_global_var("hoge");
-  bounds_check();
-  bounds_check_loop();
+  bounds_check_on();
+  bounds_check_off();
+  bounds_check_loop_on();
+  bounds_check_loop_off();
   divided_by_zero();
   double_free("hoge");
   dynamic_arr_not_gurd();
   heap_overflow("hoge");
   init_size_stdin_malloc();
+  init_zero_size_stdin_malloc();
   integer_overflow();
   integer_overflow_shift();
   memory_leak();

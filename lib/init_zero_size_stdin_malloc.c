@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void init_size_stdin_malloc() {
-  size_t size = 10;
+void init_zero_size_stdin_malloc() {
+  size_t size = 0;
   scanf("%ld", &size);
   if(size < 1) exit(1); // exit if size is less than 1
   long *arr = malloc(size * sizeof(long));
@@ -13,5 +13,4 @@ void init_size_stdin_malloc() {
     printf("%ld\n", arr[i]);
   }
   free(arr);
-  
 }

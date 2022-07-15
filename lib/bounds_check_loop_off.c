@@ -4,17 +4,16 @@
 
 #define ARRAY_SIZE 5
 
-void bounds_check_loop() {
+void bounds_check_loop_off() {
   int array[ARRAY_SIZE];
   int val = 1;
   int i;
   for(int j = 0; j < ARRAY_SIZE; j++) {
     scanf("%d%*c", &i);
-    if (i < 0 || i >= ARRAY_SIZE) exit(1); // 境界チェック
+
     array[i] = val;
   }
   for(int j = 0; j < ARRAY_SIZE; j++) {
     printf("%d\n", array[j]);
   }
-  
 }
