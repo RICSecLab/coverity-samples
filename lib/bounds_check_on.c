@@ -4,7 +4,7 @@
 
 #define ARRAY_SIZE 5
 
-void bounds_check() {
+void bounds_check_on() {
   int array[ARRAY_SIZE];
   int val = 1;
   int i;
